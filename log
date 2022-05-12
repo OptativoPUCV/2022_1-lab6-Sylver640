@@ -13,3 +13,9 @@ sudoku.c:62:11: error: statement with no effect [-Werror=unused-value]
 cc1.exe: all warnings being treated as errors
 Compilation failed
 afdaca2
+Thu May 12 12:17:06 HSP 2022: 
+ sudoku.c | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+ tests:  0|5
+total_score: 0/70
+a5f9912
