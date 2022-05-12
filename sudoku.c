@@ -51,6 +51,8 @@ int is_valid(Node* n){
       {
         if (n->sudo[i][k] == n->sudo[i-1][k])
           return 0;
+        if (n->sudo[i][k] == n->sudo[i][k-1])
+          return 0;
       }
     return 1;
 }
