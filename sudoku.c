@@ -58,7 +58,7 @@ List* get_adj_nodes(Node* n){
       {
         if (n->sudo[i][k] == 0)
         {
-          for (int newValue = 0; newValue < 9; newValue++)
+          for (int newValue = 1; newValue < 9; newValue++)
           {
             Node* adjNode = createNode();
             adjNode->sudo[i][k] = newValue;
