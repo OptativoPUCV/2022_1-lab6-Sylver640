@@ -53,3 +53,9 @@ sudoku.c:65:26: error: comparison between pointer and integer [-Werror]
 cc1.exe: all warnings being treated as errors
 Compilation failed
 8fd5cc2
+Thu May 12 19:36:43 HSP 2022: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  2|4
+total_score: 15/70
+51822a9
