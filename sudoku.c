@@ -47,7 +47,7 @@ int is_valid(Node* n){
     int i, k, iSub, kSub;
     int *fila = calloc(10, sizeof(int));
     int *columna = calloc(10, sizeof(int));
-    //int submatriz[10] = {0,0,0,0,0,0,0,0,0,0};
+    int *submatriz = calloc(10, sizeof(int));
     
     for (i = 0; i < 9; i++)
     {
@@ -74,8 +74,15 @@ int is_valid(Node* n){
         {
           iSub = 3*(k/3) + (p/3);
           kSub = 3*(k%3) + (p%3);
-          //printf("%d ", n->sudo[iSub][kSub]);
-          if (p%3 == 2) printf("\n");
+          for (int subA = 0; subA < 3; subA++)
+          {
+            for (int subB = 0; subB < 3; subB++)
+            {
+              if (submatriz[n->sudo[iSub][kSub]] == 1)
+                return 0;
+              else submatriz[n->sudo[iSub][kSub]] = 1;
+            }
+          }
         }
 
       }
