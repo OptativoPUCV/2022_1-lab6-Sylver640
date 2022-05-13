@@ -58,7 +58,11 @@ int is_valid(Node* n){
         if (columna[k] == 1) return 0;
         else columna[k] = 1;
       }
-      fila = {0,0,0,0,0,0,0,0,0,0,0};
+      for (int a = 0; a < 9; a++)
+      {
+        fila[a] = 0;
+        columna[a] = 0;
+      }
     }
     return 1;
 }

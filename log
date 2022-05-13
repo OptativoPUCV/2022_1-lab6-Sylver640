@@ -104,3 +104,9 @@ sudoku.c:61:14: error: expected expression before '{' token
               ^
 Compilation failed
 7938033
+Thu May 12 20:19:20 HSP 2022: 
+ sudoku.c | 6 +++++-
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+ tests:  2|4
+total_score: 15/70
+904524a
