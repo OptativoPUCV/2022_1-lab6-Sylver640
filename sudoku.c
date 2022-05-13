@@ -61,12 +61,12 @@ int is_valid(Node* n){
         columna[a] = 0;
     }
 
-    for (k = 0; k < 9; k++)
+    for (i = 0; i < 9; i++)
     {
-      for (i = 0; i < 9; i++)
+      for (k = 0; k < 9; k++)
       {
-        if (fila[n->sudo[i][k]] == 0)
-          fila[n->sudo[i][k]] = 1;
+        if (fila[n->sudo[k][i]] == 0)
+          fila[n->sudo[k][i]] = 1;
         else return 0;
       }
       for (int a = 0; a < 10; a++)
