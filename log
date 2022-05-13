@@ -163,3 +163,9 @@ sudoku.c:49:10: error: unused variable 'columna' [-Werror=unused-variable]
 cc1.exe: all warnings being treated as errors
 Compilation failed
 ffa80f1
+Thu May 12 20:51:01 HSP 2022: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  2|4
+total_score: 15/70
+32168d8
