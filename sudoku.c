@@ -82,6 +82,8 @@ int is_valid(Node* n){
 
     for (int m = 0; m < 9; m++)
       {
+        for (int c = 0; c < 10; c++)
+         submatriz[c] = 0;
         for (int y = 0; y < 9; y++)
           {
             int iSub = 3*(m/3) + (y/3);
@@ -92,8 +94,6 @@ int is_valid(Node* n){
               else submatriz[n->sudo[iSub][kSub]] = 1;
             }
           }
-        for (int c = 0; c < 10; c++)
-         submatriz[c] = 0;
       }
     return 1;
 }
