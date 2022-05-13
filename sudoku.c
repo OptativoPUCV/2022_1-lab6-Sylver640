@@ -82,7 +82,8 @@ int is_valid(Node* n){
                 return 0;
               else submatriz[n->sudo[iSub][kSub]] = 1;
             }
-            submatriz[a] = 0;
+            for (int b = 0; b < 10; b++)
+              submatriz[b] = 0;
           }
         }
 

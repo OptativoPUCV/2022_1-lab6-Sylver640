@@ -283,3 +283,9 @@ sudoku.c:85:23: error: 'a' undeclared (first use in this function)
 sudoku.c:85:23: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 aa2767c
+Thu May 12 22:51:42 HSP 2022: 
+ sudoku.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+ tests:  1|4
+total_score: 10/70
+ce9a9e6
