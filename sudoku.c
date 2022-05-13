@@ -113,6 +113,8 @@ List* get_adj_nodes(Node* n){
               pushBack(list, adjNode);
             }
           }
+          n->sudo[i][k] = 0;
+          return list;
         }
       }
     }
