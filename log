@@ -152,3 +152,14 @@ Thu May 12 20:43:12 HSP 2022:
  tests:  2|4
 total_score: 15/70
 bf32025
+Thu May 12 20:50:56 HSP 2022: 
+ sudoku.c | 12 ++++++++----
+ 1 file changed, 8 insertions(+), 4 deletions(-)
+In file included from test.c:5:0:
+sudoku.c: In function 'is_valid':
+sudoku.c:49:10: error: unused variable 'columna' [-Werror=unused-variable]
+     int *columna = calloc(10, sizeof(int));
+          ^~~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+ffa80f1

@@ -45,14 +45,18 @@ void print_node(Node* n){
 
 int is_valid(Node* n){
     int i, k;
-    //int *fila = calloc(10, sizeof(int));
-    //int *columna = calloc(10, sizeof(int));
+    int *fila = calloc(10, sizeof(int));
+    int *columna = calloc(10, sizeof(int));
     //int submatriz[10] = {0,0,0,0,0,0,0,0,0,0};
 
     for (i = 0; i < 9; i++)
     {
-      for (k = i; i < 9 && n->sudo[i][i] != n->sudo[i][k]; k++)
-        if (n->sudo[i][i] == n->sudo[i][k]) return 0;
+      for (k = 0; k < 9; k++)
+      {
+        if (fila[n->sudo[i][k]] == 0)
+          fila[n->sudo[i][k]] = 1;
+        else return 0;
+      }
     }
     return 1;
 }
