@@ -94,3 +94,13 @@ Thu May 12 20:12:13 HSP 2022:
  tests:  2|4
 total_score: 15/70
 ce4b1eb
+Thu May 12 20:15:41 HSP 2022: 
+ sudoku.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+In file included from test.c:5:0:
+sudoku.c: In function 'is_valid':
+sudoku.c:61:14: error: expected expression before '{' token
+       fila = {0,0,0,0,0,0,0,0,0,0,0};
+              ^
+Compilation failed
+7938033
