@@ -44,10 +44,10 @@ void print_node(Node* n){
 }
 
 int is_valid(Node* n){
-    int i, k;// iSub, kSub;
+    int i, k;
     int *fila = calloc(10, sizeof(int));
     int *columna = calloc(10, sizeof(int));
-    //int *submatriz = calloc(10, sizeof(int));
+    int *submatriz = calloc(10, sizeof(int));
     
     for (i = 0; i < 9; i++)
     {
@@ -76,6 +76,21 @@ int is_valid(Node* n){
       }
     }
 
+    for (int m = 0; m < 9; m++)
+      {
+        for (int y = 0; y < 9; y++)
+          {
+            int iSub = 3*(m/3) + (y/3);
+            int kSub = 3*(m%3) + (y%3);
+            if (n->sudo[iSub][kSub] != 0)
+            {
+              if (submatriz[n->sudo[iSub][kSub]] == 1) return 0;
+              else submatriz[n->sudo[iSub][kSub]] = 1;
+            }
+          }
+        for (int b = 0; b < 10; b++)
+         submatriz[b] = 0;
+      }
     return 1;
 }
 
