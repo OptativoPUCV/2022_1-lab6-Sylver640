@@ -68,6 +68,16 @@ int is_valid(Node* n){
           else 
             columna[n->sudo[k][i]] = 1;
         }
+
+        int p;
+        for (p = 0; p < 9; p++)
+        {
+          int iSub = 3*(k/3) + (p/3);
+          int kSub = 3*(k%3) + (p%3);
+          printf("%d ", n->sudo[iSub][kSub]);
+          if (p%3 == 2) printf("\n");
+        }
+
       }
       for (int a = 0; a < 10; a++)
       {
