@@ -448,3 +448,8 @@ sudoku.c:49:9: error: variable ‘columna’ set but not used [-Werror=unused-bu
 cc1: all warnings being treated as errors
 Compilation failed
 dda69ea
+Fri May 13 15:23:26 UTC 2022: 
+ sudoku.c | 9 +++++++++
+ 1 file changed, 9 insertions(+)
+ tests:  0|0
+9a7b89d

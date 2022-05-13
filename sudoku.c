@@ -77,6 +77,15 @@ int is_valid(Node* n){
       {
         for (int b = 0; b < 10; b++)
           columna[b] = 0;
+
+        for (k = 0; k < 9; k++)
+          {
+            if (n->sudo[k][i] != 0)
+            {
+              if (columna[n->sudo[k][i]] == 1) return 0;
+              else columna[n->sudo[k][i]] = 1;
+            }
+          }
       }
 
     for (int m = 0; m < 9; m++)
