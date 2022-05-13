@@ -337,3 +337,15 @@ Fri May 13 14:59:03 UTC 2022:
  1 file changed, 5 insertions(+), 5 deletions(-)
  tests:  0|0
 8724183
+Fri May 13 15:01:26 UTC 2022: 
+ sudoku.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:5:0:
+sudoku.c: In function ‘DFS’:
+sudoku.c:144:10: error: ‘nodo’ undeclared (first use in this function); did you mean ‘Node’?
+     if (!nodo) return NULL;
+          ^~~~
+          Node
+sudoku.c:144:10: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+bfe6083
