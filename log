@@ -272,3 +272,14 @@ Thu May 12 22:50:16 HSP 2022:
  tests:  1|4
 total_score: 10/70
 baf5009
+Thu May 12 22:51:11 HSP 2022: 
+ sudoku.c | 2 ++
+ 1 file changed, 2 insertions(+)
+In file included from test.c:5:0:
+sudoku.c: In function 'is_valid':
+sudoku.c:85:23: error: 'a' undeclared (first use in this function)
+             submatriz[a] = 0;
+                       ^
+sudoku.c:85:23: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+aa2767c

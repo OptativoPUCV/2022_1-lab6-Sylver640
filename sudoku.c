@@ -82,6 +82,7 @@ int is_valid(Node* n){
                 return 0;
               else submatriz[n->sudo[iSub][kSub]] = 1;
             }
+            submatriz[a] = 0;
           }
         }
 
@@ -90,6 +91,7 @@ int is_valid(Node* n){
       {
         fila[a] = 0;
         columna[a] = 0;
+        submatriz[a] = 0;
       }
     }
 
