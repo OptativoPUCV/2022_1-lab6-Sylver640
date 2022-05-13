@@ -74,7 +74,7 @@ int is_valid(Node* n){
         {
           iSub = 3*(k/3) + (p/3);
           kSub = 3*(k%3) + (p%3);
-          printf("%d ", n->sudo[iSub][kSub]);
+          //printf("%d ", n->sudo[iSub][kSub]);
           if (p%3 == 2) printf("\n");
         }
 
