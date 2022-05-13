@@ -141,7 +141,7 @@ Node* DFS(Node* initial, int* cont){
   while (size != 0)
   {
     Node* n = top(S);
-    if (!nodo) return NULL;
+    if (!n) return NULL;
     pop(S);
     if (is_final(n) == 1) return n;
 
