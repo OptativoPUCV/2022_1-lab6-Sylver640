@@ -69,7 +69,7 @@ int is_valid(Node* n){
             columna[n->sudo[k][i]] = 1;
         }
 
-        int p;
+        /*int p;
         for (p = 0; p < 9; p++)
         {
           iSub = 3*(k/3) + (p/3);
@@ -85,14 +85,14 @@ int is_valid(Node* n){
             for (int b = 0; b < 10; b++)
               submatriz[b] = 0;
           }
-        }
+        }*/
 
       }
       for (int a = 0; a < 10; a++)
       {
         fila[a] = 0;
         columna[a] = 0;
-        submatriz[a] = 0;
+        //submatriz[a] = 0;
       }
     }
 

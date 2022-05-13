@@ -289,3 +289,20 @@ Thu May 12 22:51:42 HSP 2022:
  tests:  1|4
 total_score: 10/70
 ce9a9e6
+Thu May 12 22:52:11 HSP 2022: 
+ sudoku.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+In file included from test.c:5:0:
+sudoku.c: In function 'is_valid':
+sudoku.c:50:10: error: unused variable 'submatriz' [-Werror=unused-variable]
+     int *submatriz = calloc(10, sizeof(int));
+          ^~~~~~~~~
+sudoku.c:47:21: error: unused variable 'kSub' [-Werror=unused-variable]
+     int i, k, iSub, kSub;
+                     ^~~~
+sudoku.c:47:15: error: unused variable 'iSub' [-Werror=unused-variable]
+     int i, k, iSub, kSub;
+               ^~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+53b669b
