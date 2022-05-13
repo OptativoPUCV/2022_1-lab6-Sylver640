@@ -61,6 +61,10 @@ int is_valid(Node* n){
             fila[n->sudo[i][k]] = 1;
         }
       }
+      for (int a = 0; a < 10; a++)
+      {
+        fila[a] = 0;
+      }
     }
 
     return 1;
