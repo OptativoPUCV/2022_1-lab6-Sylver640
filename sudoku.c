@@ -45,15 +45,21 @@ void print_node(Node* n){
 
 int is_valid(Node* n){
     int i, k;
-    //int j, y;
+    int fila[10] = {0,0,0,0,0,0,0,0,0,0};
+    int columna[10] = {0,0,0,0,0,0,0,0,0,0};
+    int submatriz[10] = {0,0,0,0,0,0,0,0,0,0};
     for (i = 0; i < 9; i++)
+    {
       for (k = 0; k < 9; k++)
       {
-        if (n->sudo[i][k] == n->sudo[i-1][k])
-          return 0;
-        if (n->sudo[i][k] == n->sudo[i][k-1])
-          return 0;
+        if (fila[k] == 1) return 0;
+        else fila[k] = 1;
+
+        if (columna[k] == 1) return 0;
+        else columna[k] = 1;
+
       }
+    }
     return 1;
 }
 
