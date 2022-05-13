@@ -143,7 +143,7 @@ Node* DFS(Node* initial, int* cont){
   int size = get_size(S);
   while (size != 0)
   {
-    Node* n = first(S);
+    Node* n = top(S);
     if (!n) return NULL;
     popFront(S);
     if (is_final(n)) return n;
