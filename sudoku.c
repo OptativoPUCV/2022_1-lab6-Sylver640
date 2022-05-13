@@ -52,11 +52,13 @@ int is_valid(Node* n){
     {
       for (k = 0; k < 9; k++)
       {
-        if (fila[k] != 0) return 0;
-        else fila[k] = n->sudo[i][k];
+        if (fila[k] == 0) 
+          fila[k] = n->sudo[i][k];
+        else return 0;
 
-        if (columna[k] != 0) return 0;
-        else columna[k] = 1;
+        if (columna[k] == 0)
+          columna[k] = n->sudo[i][k];
+        else return 0;
       }
       for (int a = 0; a < 10; a++)
       {
