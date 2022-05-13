@@ -388,3 +388,16 @@ Fri May 13 15:13:45 UTC 2022:
  1 file changed, 3 insertions(+), 3 deletions(-)
  tests:  0|0
 a2825b2
+Fri May 13 15:15:29 UTC 2022: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:0:
+sudoku.c: In function ‘DFS’:
+sudoku.c:140:17: error: expected ‘)’ before ‘;’ token
+     popFront((S);
+                 ^
+sudoku.c:153:3: error: expected ‘;’ before ‘}’ token
+   }
+   ^
+Compilation failed
+b094983
