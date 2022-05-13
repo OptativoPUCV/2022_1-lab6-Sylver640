@@ -62,14 +62,6 @@ int is_valid(Node* n){
           else 
             fila[n->sudo[i][k]] = 1;
         }
-        
-        /*if (n->sudo[k][i] != 0)
-        {
-          if (columna[n->sudo[k][i]] == 1) 
-            return 0;
-          else 
-            columna[n->sudo[k][i]] = 1;
-        }*/
       }
     }
 
@@ -151,7 +143,7 @@ Node* DFS(Node* initial, int* cont){
   int size = get_size(S);
   while (size > 0)
   {
-    Node* n = top(S);
+    Node* n = first(S);
     if (!n) return NULL;
     popFront(S);
     if (is_final(n) == 1) return n;
