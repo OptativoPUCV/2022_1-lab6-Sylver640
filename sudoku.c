@@ -46,12 +46,24 @@ void print_node(Node* n){
 int is_valid(Node* n){
     int i, k;
     int *fila = calloc(10, sizeof(int));
-    //int *columna = calloc(10, sizeof(int));
+    int *columna = calloc(10, sizeof(int));
     //int submatriz[10] = {0,0,0,0,0,0,0,0,0,0};
 
     for (i = 0; i < 9; i++)
     {
       for (k = 0; k < 9; k++)
+      {
+        if (columna[n->sudo[i][k]] == 0)
+          columna[n->sudo[i][k]] = 1;
+        else return 0;
+      }
+      for (int a = 0; a < 10; a++)
+        columna[a] = 0;
+    }
+
+    for (k = 0; k < 9; k++)
+    {
+      for (i = 0; i < 9; i++)
       {
         if (fila[n->sudo[i][k]] == 0)
           fila[n->sudo[i][k]] = 1;
