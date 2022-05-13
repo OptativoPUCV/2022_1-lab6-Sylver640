@@ -421,3 +421,14 @@ Fri May 13 15:19:57 UTC 2022:
  1 file changed, 2 insertions(+)
  tests:  0|0
 f2d7e0d
+Fri May 13 15:20:53 UTC 2022: 
+ sudoku.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+In file included from test.c:5:0:
+sudoku.c: In function ‘is_valid’:
+sudoku.c:49:9: error: unused variable ‘columna’ [-Werror=unused-variable]
+     int columna[10];
+         ^~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+25cbc36
